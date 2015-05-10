@@ -7,3 +7,14 @@ You will be formed into project groups each containing four members, which you w
 At the beginning of each week you will all be set a new open-ended project. 
 
 Each group will need to divide the work up and share it between them.
+
+## Groups
+
++ Abdi, Jack, Jack, Lukas
++ Alex, Anita, Claire, Simon   
++ Anni, Daniel, Mina, Rafe
++ Josh, Michelle, Nikhila, Ronan
+
+
+
+
