@@ -2,7 +2,7 @@
 
 This document explains each section of the code in 'index.html'. It will take you through how tocreate a new HTTP object, retrieve text from a file (name.txt) and display the result on the page.
 
-For an introduction to HTTP Requests read [url] first!
+For an introduction to HTTP Requests read the README:[https://github.com/nikhilaravi/fac5/blob/nikkinotes/week2/FrontEndREADME.md] first!
 
 First set up the HTML file. Within the body create a paragraph with an id of 'response'. This will display the contents of the file we will call later on.  
 
