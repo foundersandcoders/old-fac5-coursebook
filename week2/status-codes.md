@@ -12,6 +12,6 @@
 |204|No Content|The server successfully processed the request, but is not returning any content. Usually used as a response to a successful delete request.|
 |205|Reset Content|The server successfully processed the request, but is not returning any content. Unlike a 204 response, this response requires that the requester reset the document view.|
 |206|
-|**300s**    | **Redirection**  ||
+|**300s**    | **Redirection**  |
 |**400s**    | **Client Error**  |
 |**500s**    | **Server Error**  |
