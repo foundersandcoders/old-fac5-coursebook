@@ -1,5 +1,9 @@
 
-
+<html>
+<head>
+</head>
+<body>
+<script>
 var request = new XMLHttpRequest(); // create a new HTTP object
 // The XMLHttpRequest object is used to exchange data with a server behind the scenes to update a webpage without reloading
 request.open("GET", 'name.txt',false); //use the open method on the HTTP object
@@ -20,7 +24,9 @@ request.onreadystatechange = function() {
 		console.log(request.responseText);
 	};
 });
-
+</script>
+</body>
+</html>
 
 
 
