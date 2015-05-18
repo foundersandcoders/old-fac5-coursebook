@@ -86,7 +86,7 @@ function AjaxGetRequest(url, callback){
       }
     }
   };
-  httpRequest.open(method, url, true);
+  httpRequest.open("GET", url, true);
   httpRequest.send(null);
 };
 ```
