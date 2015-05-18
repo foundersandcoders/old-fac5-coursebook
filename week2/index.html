@@ -5,15 +5,18 @@
 <body>
 	<p id="response">Contents of the file</p>
 <script>
+
 var request = new XMLHttpRequest(); 
 
-//Synchronously calling the open method
-request.open("GET", 'name.txt',false); 
-request.send(null);
+// Synchronous call
+
+request.open("POST", 'name.html',false); 
+request.send("This is HTML");
 console.log(request.responseText);
 console.log(request.statusText);
 
-//Asynchronously calling the open method
+// Asynchronous call
+
 request.open("GET",'name.html',true);
 request.send();
 request.onreadystatechange = function() {
@@ -22,6 +25,7 @@ request.onreadystatechange = function() {
 		document.getElementById('response').innerHTML = request.responseText;
 	};
 };
+
 </script>
 </body>
 </html>
