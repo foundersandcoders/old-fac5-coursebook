@@ -1,7 +1,7 @@
-#Front End Devs
+# Front End Devs
 
 
-#### Rafe's notes on HTTP requests
+### The Anatomy of an HTTP request
 
 Websites don't send you anything over HTTP without a request first
 
@@ -17,7 +17,7 @@ Get the thing at /bookIWant using this protocol (language I'm talking)
 
 >A woman stands in her living room, and says "I want *Harry Potter & The Goblet of Fire*". Unfortunately, as she is at home, and not in the bookshop, she doesn't get anything.
 
-**Host: appleshop.com**  
+**Host: bookshop.com**  
 Where the thing is found (get downstairs projector rather than upstairs projector)
 
 >The woman is now in the bookshop, and says "I want *Harry Potter & The Goblet of Fire"*. The man behind the counter hands her a film poster.
