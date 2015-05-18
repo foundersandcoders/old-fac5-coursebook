@@ -75,7 +75,7 @@ Finally you have to method for accessing the response of the server:
 To simplify all the previous steps we can create a wrapper. This wrapper is a function which takes two parameters, the URL and a function you want to call when the response is received. The wrapper
 
 ```javascript
-function AjaxGetRequest(url, callback){
+function ajaxGetRequest(url, callback){
   var httpRequest = new XMLHttpRequest();
   httpRequest.onreadystatechange = function(){
     if (httpRequest.readyState === 4) {
