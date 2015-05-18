@@ -1,34 +1,126 @@
 #Front End Devs
 
-# What is an HTTP Request?
+## What is an HTTP request?
 
-HTTP works as a request-response protocol between a client and server
-A client submits a request and the server returns the response
+HTTP stands for Hyper Text Transfer protocol, and this is basically an agreed upon method that defines how computers communicate with each other. Whenever you use a browser(or an application) to view a website you are using the HTTP protocol.
 
-##GET request
+### HTTP cycle
 
-```js
-GET /files/fruit.txt HTTP/1.1
-// GET (i.e. fetch) the file 'fruit.txt' from the server at 'eloquentjavascript.new' using version 1.1 of the  //HTTP protocol from the browser mentioned by 'User-Agent'
-Host: eloquentjavascript.net
-User-Agent: a browser
-```
+Whenever you visit a web page on the web your browser makes a request to a webserver to load that websites onto your browswer. so for example, when you visit: http://wikipedia.org your browser uses the HTTP protocol to request the pages for Wikipedia and the web server (another computer on the Internet) will send back the pages to your browser. The data that the web server sends back is typically HTML mark up code, CSS, and JavaScript. Your broswer then renders the web page along with the CSS styling and any JS logic that the pages need. This is all done very quickly, but there are several streps involved when you request a page from a webserver.
 
-Response
-The server responds with the status of the request, some information about it and the file itself:
+**Step 1:** Type in the URL of the web page you wish to view
 
-```js
-HTTP/1.1 200 OK
-Last-Modified: Mon, 23 Jul 2007 08:41:56 GMT
-Content-Length: 24
-Content-Type: text/plain
+**Step 2:** Your request is sent using the HTTP protocol across the Internet
 
-'contents of fruit.txt displayed here'
-```
+**Step 3:** The web server(in our example wikipedia's web server) receives the request and looks to see if the page requested is there.
 
-##POST request
+**Step 4:** The web server sends back the web page requested as data via the Internet, again using the HTTP protocol.
 
-this indicates some information will be sent along with the request
+**Step 5:** The browser receives the data sent by the web server and renders this to make it viewable to the reader. So, this involves rendering the mark up, CSS and any JS logic.
+
+### Summary
+
+So essentially, HTTP is a method that both client (browser) and server use to communicate with each other and make sure everything is consistent in their communication.
+
+## How to make an HTTP request in vanilla JS
+
+There are four steps involved in making an HTTP request in JS:
+
+**1.** Create an XMLHTTP request object
+
+**2.** Define a call back function -
+
+This is the programming that is run when the server responds with the data along with the logic that to update the DOM.
+
+**3.** Open a request
+
+This step gives the browser two pieces of information  the method the browser will use to send the request, usually either get or post, and the URL where the request is sent (the web server).
+
+**4.** Send the request
+
+The last step is to actually send the request. The previous three steps gave the web browser all the information it needs so we can finally send off the request to the web server.
+
+### Summary
+
+To make an HTTP request using vanilla JavaScript you will need to follow four steps. XMPHTTPRequest is a JS object that was first designed by Microsoft in the late 90's and was later adopted as a standard the web community, it is now in the process of being standardized by the W3 consortium. The XMLHTTPRequest object has many methods and properties, however you will most likely use only a few of these methods and properties.
+
+**Notable properies and methods that are used in an HTTP request are:**
+
+onreadystatechange
+This is a property that stores a call back function that is called every time the readyState property changes.
+
+readyState
+This property holds the status of the XMLHTTPRequest object as it changes from 0 to 4. Here's a breakdown of the 4 states in the readyState property:
+
+0: request not initialized
+1: server connection established
+2: request received
+3: processing request
+4: request finished and response is ready
+
+The state that you will need to be checking for is 4, as this means that the request has finished and the the server has sent all of the data.
+
+### AJAX?
+
+Whenever you talk about HTTP request you will likely come across AJAX. AJAX stands for Asynchronous JavaScript And XML. This basically means using making HTTP requests asynchronously to update a web page without reloading the whole page.
+
+The format that data is sent in from servers in most cases is JSON - JavaScript Object Notation, but the name has stuck from the days that XML was used exclusively or maybe it was hard to pronounce AJSON?
 
 
-In js programs to communicate with the server without reloading the page the js function needs to make the HTTP request itself using the XMLHttpRequest() 
+### Another way for making HTTP calls
+
+Besides using vanilla JS you can use many different libraries to make HTTP requests, the most common way is to use the hugely popular JQuery library. There are methods available in JQuery that abstract away some of the steps involved such as the $.get() method.  
+
+## The Anatomy of an HTTP request
+
+Websites don't send you anything over HTTP without a request first
+
+You need 4 things to make a request:
+  1. **URI:** a noun (a reference to the thing you want)
+  2. **Method:** a verb (what you want to do with the thing)
+  3. **Headers:** (information about the request (who sent it, etc.))
+  4. **Body:** another noun (data you want to send to the server)
+
+
+**GET /bookIWant HTTP/1.1 []**  
+Get the thing at /bookIWant using this protocol (language I'm talking)
+
+>A woman stands in her living room, and says "I want *Harry Potter & The Goblet of Fire*". Unfortunately, as she is at home, and not in the bookshop, she doesn't get anything.
+
+**Host: bookshop.com**  
+Where the thing is found (get downstairs projector rather than upstairs projector)
+
+>The woman is now in the bookshop, and says "I want *Harry Potter & The Goblet of Fire"*. The man behind the counter hands her a film poster.
+
+
+**Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8**  
+What document types I like
+
+>"This isn't what I want!" cries the woman. "I want the book. And failing that, the film."  
+"OK, cool. Wanna quickie in the back?" Replies the man.
+
+**User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.152 Safari/537.36**  
+What kind of person I am (browser, operating system, version ...)
+
+>"I am *not* that kind of person!" replies the woman.
+
+**DNT: 1**  
+Stop following me! (Do Not Track)
+
+>"No problem," says the man as he passes her the book "Let me just note that down in the ledger of extensive customer records we keep."  
+"Uhhh, please don't do that ..." asks the woman.  
+"Hahaha," chortles the man and ignores her.
+
+**Referer: https://www.google.co.uk/**  
+Who sent me here
+
+>"How did you find out about us by the way?" asks the man.
+>"My brother told me."
+
+**Accept-Language: en-US,en;q=0.8**  
+Languages I like
+
+>She looks down at the book, and sees *Harry Potter et la Coupe de feu*.  
+>"Oh, I'm sorry do you have it in English?"
+>
+>***TO BE CONTINUED ...***
