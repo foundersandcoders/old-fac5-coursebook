@@ -23,3 +23,21 @@ Step 5: The browser receives the data sent by the web server and renders this to
 Summary 
 
 So essentially, HTTP is a method that both client (browser) and server use to communicate with each other and make sure everything is consistent in their communication. 
+
+How to make an HTTP request in vanilla JS
+
+There are four steps involved in making an HTTP request in JS: 
+
+1. Create an XMLHTTP request object 
+
+2. Define a call back function -
+
+This is the programming that is run when the server responds with the data along with the logic that to update the DOM. 
+
+3. Open a request 
+
+This step gives the browser two pieces of information  the method the browser will use to send the request, usually either get or post, and the URL where the request is sent (the web server). 
+
+4. Send the request 
+
+The last step is to actually send the request. The previous three steps gave the web browser all the information it needs so we can finally send off the request to the web server.
