@@ -71,7 +71,7 @@ The format that data is sent in from servers in most cases is JSON - JavaScript 
 
 Besides using vanilla JS you can use many different libraries to make HTTP requests, the most common way is to use the hugely popular JQuery library. There are methods available in JQuery that abstract away some of the steps involved such as the $.get() method.  
 
-### The Anatomy of an HTTP request
+## The Anatomy of an HTTP request
 
 Websites don't send you anything over HTTP without a request first
 
