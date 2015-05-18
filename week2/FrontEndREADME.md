@@ -54,13 +54,3 @@ Languages I like
 >"Oh, I'm sorry do you have it in English?"
 >
 >***TO BE CONTINUED ...***
-
-#### Rafe's notes on making requests in vanilla JS (no libraries!)
-
-XMLHttpRequest is a constructor function (think the example from morning challenge this morning). Doesn't take parameters (???).
-
-Has a ton of cool methods which will abet you in making requests.
-
-FOR EXAMPLE: open -- it needs a method and an url*(can I provide a generic URI?) (this is the minimum for a valid http request).
-
-It initializes an HTTP request.
