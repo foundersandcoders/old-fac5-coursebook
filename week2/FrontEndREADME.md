@@ -3,7 +3,7 @@
 
 #### Rafe's notes on HTTP requests
 
-Website's don't send you anything over HTTP without a request first
+Websites don't send you anything over HTTP without a request first
 
 You need 4 things to make a request:
   1. **URI:** a noun (the address of the thing you're looking for)[POST: object of the sentence]
@@ -34,3 +34,14 @@ Referer: https://www.google.co.uk/
 
 Accept-Language: en-US,en;q=0.8
 -> languages I like
+
+
+#### Rafe's notes on making requests in vanilla JS (no libraries!)
+
+XMLHttpRequest is a constructor function (think the example from morning challenge this morning). Doesn't take parameters (???).
+
+Has a ton of cool methods which will abet you in making requests.
+
+FOR EXAMPLE: open -- it needs a method and an url*(can I provide a generic URI?) (this is the minimum for a valid http request).
+
+It initializes an HTTP request.
