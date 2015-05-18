@@ -1,10 +1,10 @@
 #Example of a HTTP Request in JS
 
-This document explains each section of the code in 'index.html'. It will take you through how tocreate a new HTTP object, retrieve text from a file (name.txt) and display the result on the page.
+This document explains each section of the code in 'index.html'. It will take you through how to create a new HTTP object, retrieve text from a file (name.txt) and display the result on the page without having to reload the page.
 
-For an introduction to HTTP Requests read the (README)[https://github.com/nikhilaravi/fac5/blob/nikkinotes/week2/FrontEndREADME.md] first!
+For an introduction to HTTP Requests read the [README](https://github.com/nikhilaravi/fac5/blob/nikkinotes/week2/FrontEndREADME.md) first!
 
-First set up the HTML file. Within the body create a paragraph with an id of 'response'. This will display the contents of the file we will call later on.  
+First set up the HTML file. Within the body, create a paragraph with an id of 'response'. This will display the contents of the file we will get data from in our HTTP Request.  
 
 ``` html
 <p id="response">Contents of the file</p>
@@ -71,6 +71,6 @@ The text in the 'name.txt' file should appear on the page. In the Javascript con
 
 
 ##References
-[http://eloquentjavascript.net/1st_edition/chapter14.html]: http://eloquentjavascript.net/1st_edition/chapter14.html
-[http://www.w3schools.com/dom/dom_httprequest.asp]: http://www.w3schools.com/dom/dom_httprequest.asp
+1. [http://eloquentjavascript.net/1st_edition/chapter14.html](http://eloquentjavascript.net/1st_edition/chapter14.html)
+2. [http://www.w3schools.com/dom/dom_httprequest.asp](http://www.w3schools.com/dom/dom_httprequest.asp)
 
