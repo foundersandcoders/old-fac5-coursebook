@@ -71,6 +71,6 @@ The text in the 'name.txt' file should appear on the page. In the Javascript con
 
 
 ##References
-[http://eloquentjavascript.net/1st_edition/chapter14.html](http://eloquentjavascript.net/1st_edition/chapter14.html)
-[http://www.w3schools.com/dom/dom_httprequest.asp](http://www.w3schools.com/dom/dom_httprequest.asp)
+1. [http://eloquentjavascript.net/1st_edition/chapter14.html](http://eloquentjavascript.net/1st_edition/chapter14.html)
+2. [http://www.w3schools.com/dom/dom_httprequest.asp](http://www.w3schools.com/dom/dom_httprequest.asp)
 
