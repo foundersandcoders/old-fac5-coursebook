@@ -14,6 +14,7 @@ The HTTP request will be made within `<script></script>` tags. A HTTP request is
 
 ``` js
 var request = new XMLHttpRequest(); // creates a new HTTP object called 'request'
+
 ```
 The XMLHttpRequest object is used to exchange data with a server behind the scenes to update a webpage without reloading it. 
 
@@ -33,6 +34,7 @@ The HTTP object has several properties. Some examples:
 ``` js
 .responseText() // response data as a string (i.e. data stored in the file you have opened)
 .statusText() // 
+```
 
 These properties can be logged to the console. 
 
@@ -41,7 +43,7 @@ console.log(request.responseText);
 console.log(request.statusText);
 ```
 
-So far we have been *synchronously* calling the `.open' method on the HTTP request object (by setting the 'async' parameter to 'false'. This means that while the method is executing, no other functions on the page can work.  
+So far we have been *synchronously* calling the `.open` method on the HTTP request object (by setting the 'async' parameter to 'false'. This means that while the method is executing, no other functions on the page can work.  
 Setting the 'async' parameter to 'true' means that JavaScript doesn't have to wait for the server response and can execute other scripts on the page. The `open` method effectively runs in the background. 
 
 ``` js
