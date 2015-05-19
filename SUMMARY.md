@@ -12,3 +12,4 @@
    * [Assignment](week1/assignment.md)
 * Week 2
    * [Role challenges](week2/rolechallenge.md)
+   * [Assignment](week2/assignment.md)
