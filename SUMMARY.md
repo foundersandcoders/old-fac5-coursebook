@@ -13,3 +13,6 @@
 * Week 2
    * [Role challenges](week2/rolechallenge.md)
    * [Assignment](week2/assignment.md)
+* [Week 3](week3/README.md)
+* [Week 4](week4/README.md)
+   * [Assignment](week4/assignment.md)
