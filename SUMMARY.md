@@ -13,6 +13,13 @@
 * Week 2
    * [Role challenges](week2/rolechallenge.md)
    * [Assignment](week2/assignment.md)
+   * [learning outcomes](week2/outcomes.md)
+   * [AJAX](week2/ajax.md)
+   * [Architecture](week2/architecture.md)
+   * [Gitflow](week2/gitflow.md)
+   * [HTTP basics](week2/HTTP-Basics.md)
+   * [Status codes](week2/status-codes.md)
 * [Week 3](week3/README.md)
 * [Week 4](week4/README.md)
    * [Assignment](week4/assignment.md)
+   * [Jigsaw day](week4/libraries.md)
