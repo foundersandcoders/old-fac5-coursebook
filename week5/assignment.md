@@ -1,4 +1,4 @@
-# Week 5: add location-based services to your Twitter clone
+# Week 5: Add location-based services to your Twitter clone
 
 This week, we are going to keep working on our Twitter clone to add location-based services.
 
