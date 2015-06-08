@@ -21,7 +21,11 @@ This is not a small task and it is possible that we won't have time to do the wh
 + Deploy to Heroku
 
 ### Step 6 
-+ Add real-time updates of tweets
++ Add real-time updates of tweets (using front-end JavaScript) 
+
+### Step 7 ***NEW***
++ Add real-time updates of tweets (using Socket.IO) 
+
 
 Depending on how much progress you make, we may start adding some stretch steps before the end of the week.
 
