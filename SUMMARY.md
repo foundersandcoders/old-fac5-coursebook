@@ -29,3 +29,6 @@
    * [Assignment](week5/assignment.md)
    * [Jigsaw day](week5/databases.md)
    * [Learning outcomes](week5/outcomes.md)
+* Week 6
+   * [Assignment](week6/assignment.md)
+   
