@@ -21,4 +21,5 @@
 
 ### Logging and analytics
 + [Good](https://github.com/hapijs/good)
++ [a good tutorial](https://github.com/minaorangina/good)
 
