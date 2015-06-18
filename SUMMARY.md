@@ -31,4 +31,5 @@
    * [Learning outcomes](week5/outcomes.md)
 * Week 6
    * [Assignment](week6/assignment.md)
+   * [Learning outcomes](week6/outcomes.md)
    
