@@ -33,4 +33,6 @@
    * [Assignment](week6/assignment.md)
    * [Learning outcomes](week6/outcomes.md)
    * [Alan's talk](week6/alanshaw.md)
+* Week 7
+   * [Assignment](week7/assignment.md)
    
