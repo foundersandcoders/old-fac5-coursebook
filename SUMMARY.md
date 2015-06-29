@@ -35,4 +35,6 @@
    * [Alan's talk](week6/alanshaw.md)
 * Week 7
    * [Assignment](week7/assignment.md)
+* Week 8
+   * [Assignment](week8/assignment.md)
    
